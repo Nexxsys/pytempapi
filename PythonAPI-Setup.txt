@@ -1,0 +1,18 @@
+# /usr/bin/python3
+# Python 3
+sudo apt-get install python-pip
+sudo apt-get install npm
+pip install virtualenv
+pip install --upgrade pip
+
+# create the virtual environment
+# http://docs.python-guide.org/en/latest/dev/virtualenvs/
+virtualenv -p /usr/bin/python3 pytempapi
+source pytempapi/bin/activate
+pip install requests
+
+# Install Flask
+pip install Flask
+# When you are done with the environment (virt)
+deactivate
+
